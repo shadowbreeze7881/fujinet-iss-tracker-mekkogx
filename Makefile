@@ -17,7 +17,7 @@ PLATFORMS += msxrom
 # SRC_DIRS may use the literal %PLATFORM% token.
 # It expands to the chosen PLATFORM plus any of its combos.
 #SRC_DIRS = src src/%PLATFORM%
-SRC_DIRS src platform/%PLATFORM%/src
+SRC_DIRS = src platform/%PLATFORM%/src
 
 # FUJINET_LIB can be
 # - a version number such as 4.7.6

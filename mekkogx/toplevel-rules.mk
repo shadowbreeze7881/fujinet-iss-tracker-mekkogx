@@ -19,7 +19,7 @@ clean::
 # Use % wildcard match to platform specific app so we don't have to
 # spell out every single platform variation
 $(R2R_DIR)/%/$(PRODUCT): FORCE
-e	$(MAKE) -f $(MAKEFILE_DIR)/platforms/$*.mk r2r
+	$(MAKE) -f $(MAKEFILE_DIR)/platforms/$*.mk r2r
 
 # Convenience: allow `make coco` (or apple2) as a shortcut
 $(PLATFORMS): %: $(R2R_DIR)/%/$(PRODUCT)
